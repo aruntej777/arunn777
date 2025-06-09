@@ -1,0 +1,21 @@
+int ledPin = 12; // the number
+int switchPin = 2; //the numbe:
+int val =0;
+void setup() {
+pinMode (ledPin, OUTPUT); 
+pinMode (switchPin, INPUT);
+Serial.begin(9600);
+}
+void loop() {
+val digitalRead(switchPin);
+if (val==HIGH)
+{
+digitalWrite (ledPin, HIGH); 
+Serial.println("Button is press
+}
+else
+{
+digitalWrite(ledPin, LOW); 
+Serial.println("Button is relea.
+}
+delay(500);
